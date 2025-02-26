@@ -12,7 +12,6 @@ public:
     }
     int ans(int i, int j,int target ,vector<int>& arr, vector<vector<int>>& dp,int sum) {
         if (i < 0) return j==target?1:0;
-        
         if (dp[i][j+sum] == -1){
             int exclude = ans(i - 1, j + arr[i],target,arr, dp,sum); 
             int include = ans(i - 1, j -arr[i],target,arr, dp,sum);             
