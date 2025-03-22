@@ -15,8 +15,7 @@ public:
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 if(isConnected[i][j]==1 && i!=j){
-                        um[i].push_back(j);
-                    
+                        um[i].push_back(j);    
                 }
             }
         }
