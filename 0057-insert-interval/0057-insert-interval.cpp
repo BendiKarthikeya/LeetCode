@@ -1,9 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
-        sort(intervals.begin(), intervals.end(), [](const vector<int>& a, const vector<int>& b) {
-            return a[0] < b[0];
-        });
+        
         int curri=newInterval[0];
         int currj=newInterval[1];
         vector<vector<int>> ans;
